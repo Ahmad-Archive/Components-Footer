@@ -40,10 +40,7 @@ Pastikan sebelum anda menginstal dan menjalankan aplikasi, anda telah menginstal
   npm run dev
   ```
 
-Aplikasi akan berjalan di `http://localhost:5173` atau `http://localhost:<port>`.
-
-
-## Penggunaan
+### Penggunaan
 
 ```bash
 # kalau footer berada diluar file app.tsx maka impor dari file yang sesuai
@@ -54,3 +51,5 @@ return (
   </div>
 );
 ```
+
+Aplikasi akan berjalan di `http://localhost:5173` atau `http://localhost:<port>`.
