@@ -1,4 +1,4 @@
-# Comoponent Footer
+# Component Footer
 
 Komponen footer digunakan untuk menampilkan footer pada halaman web. Yang dimana menunjukkan beberapa informasi seperti copyright, link ke halaman utama, dan informasi lainnya.
 
