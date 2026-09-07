@@ -1,0 +1,107 @@
+:root {
+    --bg: radial-gradient(circle at center, #374151 0%, #192126 100%);
+    --bg-glass: rgba(255, 255, 255, 0.05);
+    --border-glass: 1px solid rgba(255, 255, 255, 0.2);
+    --primary-color: #f9fafb;
+    --secondary-color: #9ca3af;
+    --divider-color: rgba(255, 255, 255, 0.25);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--primary-color);
+    min-height: 100vh;
+}
+
+.footer {
+    background: var(--bg-glass);
+    border-top: var(--border-glass);
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between; /* Menyebar konten ke kiri dan kanan secara merata */
+    padding: 1.8rem 3.5rem;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 100%;
+}
+
+/* bisa dihapus kalau sekiranya butuh divider
+.divider {
+    margin: 0.15rem 0;
+    height: 1px;
+    background: var(--divider-color);
+}
+*/
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 380px;
+}
+
+.footer-content .title-footer {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer-content .description-footer {
+    font-size: 0.9rem;
+    text-align: justify;
+    color: var(--secondary-color);
+}
+
+.link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Digunakan untuk menampilkan link dalam grid column, supaya tidak rata kebawah */
+    gap: 8rem;
+}
+
+.link-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.link-footer h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+.social-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.social-footer h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icons p {
+    font-size: 0.9rem;
+}
